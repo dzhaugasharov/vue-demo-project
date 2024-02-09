@@ -1,6 +1,8 @@
 <script>
+import TaskList from './components/TaskList.vue';
 
 export default {
+  components: { TaskList },
   data() {
     return {
       count: 0,
@@ -66,6 +68,13 @@ export default {
     <div v-show="count >= 10">maximum</div>
     <div v-show="count <= -10">minimum</div>
     <div></div>
+    <hr>
+
+    <br>
+    <br>
+    <br>
+    <task-list></task-list>
+
   </main>
 </template>
 
